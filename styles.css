@@ -1,7 +1,32 @@
 body {
-  background-image: url(images/background.jpg);
+  background-image: url(Images/background.jpg);
   background-repeat: none;
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
 }
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#info {
+  background-image: url(Images/HeaderScrap.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 3rem;
+  aspect-ratio: 16/9;
+}
+
+#info > * {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
