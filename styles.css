@@ -1,8 +1,8 @@
 body {
-  background-image: url(Images/background.jpg);
-  background-repeat: none;
+  background-image: url(images/background.jpg);
+  background-repeat: repeat-y;
   background-position: top;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
 }
 .nav-link:hover {
@@ -10,7 +10,7 @@ body {
 }
 
 #info {
-  background-image: url(Images/HeaderScrap.png);
+  background-image: url(images/HeaderScrap.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -70,13 +70,13 @@ h2 {
   border-radius: 10px;
   max-width: 650px;
 }
-=======
+
 .nav-link:hover {
   text-decoration: underline;
 }
 
 #info {
-  background-image: url(Images/HeaderScrap.png);
+  background-image: url(images/HeaderScrap.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
