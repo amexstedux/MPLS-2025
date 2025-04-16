@@ -5,3 +5,43 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+@font-face {
+  font-family: "Impact";
+  src: url(fonts/Impact-Label.ttf) format("truetype");
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Impact";
+  font-size: 42px;
+  text-align: center;
+  transform: rotate(-3deg);
+}
+
+.about-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt-img {
+  width: 50%;
+  display: block;
+}
+
+.about-paragraph {
+  position: absolute;
+  top: 50%; /* Adjust this to position vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 60%; /* Control paragraph width */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 650px;
+}
