@@ -1,3 +1,7 @@
-main {
-    background-color: purple;
+body {
+  background-image: url(images/background.jpg);
+  background-repeat: none;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
 }
