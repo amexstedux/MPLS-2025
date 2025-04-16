@@ -30,3 +30,68 @@ body {
 }
 
 
+
+@font-face {
+  font-family: "Impact";
+  src: url(fonts/Impact-Label.ttf) format("truetype");
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Impact";
+  font-size: 42px;
+  text-align: center;
+  transform: rotate(-3deg);
+}
+
+.about-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt-img {
+  width: 50%;
+  display: block;
+}
+
+.about-paragraph {
+  position: absolute;
+  top: 50%; /* Adjust this to position vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 60%; /* Control paragraph width */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 650px;
+}
+=======
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#info {
+  background-image: url(Images/HeaderScrap.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 3rem;
+  aspect-ratio: 16/9;
+}
+
+#info > * {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
