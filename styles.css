@@ -5,6 +5,8 @@ body {
   /* background-attachment: fixed; */
   background-size: cover;
 }
+
+
 .nav-link:hover {
   text-decoration: underline;
 }
@@ -28,6 +30,7 @@ body {
   max-width: 90%;
   margin: 0 auto;
 }
+
 
 
 
@@ -71,6 +74,8 @@ h2 {
   max-width: 650px;
 }
 
+
+
 .nav-link:hover {
   text-decoration: underline;
 }
@@ -94,4 +99,5 @@ h2 {
   max-width: 90%;
   margin: 0 auto;
 }
+
 
