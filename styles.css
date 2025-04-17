@@ -1,15 +1,33 @@
 body {
-  background-image: url(images/background.jpg);
+  background-image: url(images/purple-green.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+main {
+  background-image: url(images/smaller-background.jpg);
   background-repeat: repeat-y;
   background-position: top;
-  /* background-attachment: fixed; */
   background-size: cover;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
 }
-
-
-
+.extra-tall {
+  font-size: 400px;
+  color: rgba(255, 0, 0, 0.25)
+}
+nav{
+  background-color: purple;
+}
+.nav-link{
+  Font-size: 2rem;
+  color: white;
+}
 .nav-link:hover {
   text-decoration: underline;
+}
+.min-h-300 {
+  min-height: 30rem;
 }
 
 #info {
@@ -31,10 +49,6 @@ body {
   max-width: 90%;
   margin: 0 auto;
 }
-
-
-
-
 
 @font-face {
   font-family: "Impact";
@@ -76,30 +90,25 @@ h2 {
   max-width: 650px;
 }
 
-
-
-.nav-link:hover {
-  text-decoration: underline;
+/* Sticky Navigation Styles */
+.sticky-wrapper {
+    position: relative;
+    z-index: 100;
 }
 
-#info {
-  background-image: url(images/HeaderScrap.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  min-height: 500px;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 3rem;
-  aspect-ratio: 16/9;
+.sticky {
+    position: relative;
+    z-index: 100;
+    width: 100%;
 }
 
-#info > * {
-  position: relative;
-  z-index: 2;
-  max-width: 90%;
-  margin: 0 auto;
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: purple;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 
