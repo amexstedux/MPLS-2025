@@ -1,13 +1,13 @@
 body {
   background-image: url(images/purple-green.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat-y;
 }
 main {
-  background-image: url(images/smaller-background.jpg);
+  background-image: url(Images/smaller-background.jpg);
   background-repeat: repeat-y;
   background-position: top;
-  background-size: cover;
+  background-size: contain;
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
@@ -17,7 +17,10 @@ main {
   color: rgba(255, 0, 0, 0.25)
 }
 nav{
-  background-color: purple;
+  background-image: url(Images/ScrapPurple.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .nav-link{
   Font-size: 2rem;
@@ -31,7 +34,7 @@ nav{
 }
 
 #info {
-  background-image: url(images/HeaderScrap.png);
+  background-image: url(Images/HeaderScrap.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -46,7 +49,7 @@ nav{
 #info > * {
   position: relative;
   z-index: 2;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -72,7 +75,7 @@ h2 {
 }
 
 .abt-img {
-  width: 50%;
+  width: 80%;
   display: block;
 }
 
