@@ -1,10 +1,38 @@
 body {
   background-image: url(images/background.jpg);
-  background-repeat: none;
+  background-repeat: repeat-y;
   background-position: top;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
 }
+
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#info {
+  background-image: url(images/HeaderScrap.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 3rem;
+  aspect-ratio: 16/9;
+}
+
+#info > * {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+
 
 @font-face {
   font-family: "Impact";
@@ -45,3 +73,31 @@ h2 {
   border-radius: 10px;
   max-width: 650px;
 }
+
+
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#info {
+  background-image: url(images/HeaderScrap.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 3rem;
+  aspect-ratio: 16/9;
+}
+
+#info > * {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
