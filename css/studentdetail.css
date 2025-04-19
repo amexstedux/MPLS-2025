@@ -1,0 +1,285 @@
+body {
+    background-color: purple;
+    background-image: url(../images/purple-green.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+main {
+    background-image: url(../images/student-background.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: cover;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+nav {
+    height: 3rem;
+    text-align: center;
+    background-color: cornflowerblue;
+    opacity: 0.8;
+    position: fixed;
+    color: white;
+    width: 100%;
+    z-index: 100;
+}
+.invisible-button {
+    color: transparent;
+    display: inline-block;
+    position: relative;
+    width: 13rem;
+    height: 8rem;
+    top: 10rem;
+  }
+.contentarea {
+    margin-top: 3rem;
+    overflow: visible;
+    position: relative;
+}
+.first-column {
+    margin-top: 4rem;
+}
+.second-column {
+    padding-bottom: 15rem;
+}
+.extra-tall {
+    font-size: 400px;
+    color: rgba(255, 0, 0, 0.25)
+}
+.paperscrap {
+    z-index: 0;
+    position: absolute;
+    right: -4rem;
+    width: 41rem;
+    top: -3rem;
+}
+.student-name {
+    position: absolute;
+    color: purple;
+    font-size: 2.25rem;
+    top: 7rem;
+    left: 20rem;
+    rotate: 13deg;
+    text-align: center;
+}
+.portrait {
+    background-color: #cbcbcb;
+    position: relative;
+    top: 1rem;
+    left: 0;
+    width: 18rem;
+    height: 22rem;
+    box-shadow: rgba(0, 0, 0, 0.54) 1px 3px 10px;
+    z-index: 40;
+    border-radius: 4px;
+}
+.portrait:after {
+    content: url('../images/student-tape-1.png');
+    transform: scaleX(-1);
+    rotate: -24deg;
+    position: absolute;
+    top: -3rem;
+    left: 3rem;
+}
+.major {
+    position: relative;
+  top: 1.85rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(60, 0, 128)
+}
+.portrait img {
+    width: 17rem;
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.statement {
+    position: relative;
+  top: 0.5rem;
+  line-height: 1.6rem;
+}
+
+.photo-tile {
+    background-color: #ffffff;
+    position: relative;
+    margin: 0 0 1.75rem;
+    padding: 0.5rem;
+    width: max-content;
+    box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+    transition: transform 0.1s;
+}
+
+.photo-tile:hover {
+    transform: rotate(2deg);
+}
+
+.photo-tile:after {
+    content: url('../images/student-tape-1.png');
+    position: absolute;
+  top: -3.25rem;
+  left: 2rem;
+  rotate: 15deg;
+}
+
+#photo-2:after {
+    content: url('../images/student-tape-2.png');
+    rotate: -16deg;
+  left: 3rem;
+}
+#photo-3::after {
+    transform: scaleX(-1); /* flip the image */
+    rotate: -15deg;
+}
+
+.photo-tile a img {
+    width: 16rem;
+}
+
+#photo-1 {
+    rotate: -8deg;
+    z-index: 10;
+}
+#photo-2 {
+    rotate: 9deg;
+    z-index: 20;
+    left: 2rem;
+}
+#photo-3 {
+    rotate: -8deg;
+    z-index: 30;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 2.5rem;
+    width: 100%;
+}
+.social-links a {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.35rem;
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+    color: transparent;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    top: -2px;
+}
+#instagram::after {
+    content: ' ';
+    background-image: url('../images/instagram2.svg');
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#behance::after {
+    content: ' ';
+    background-image: url('../images/behance.svg');
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#linkedin::after {
+    content: ' ';
+    background-image: url('../images/linkedin.svg');
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#dribbble::after {
+    content: ' ';
+    background-image: url('../images/dribbble.svg');
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#www::after {
+    content: ' ';
+    background-image: url('../images/www.svg');
+    background-size: contain;
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lightbox-caption {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-style: normal!important;
+    font-size: 1.1rem;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .paperscrap {
+        display: none;
+    }
+    .student-name {
+        position: relative;
+      left: 0;
+      rotate: 0deg;
+      top: 1.75rem;
+    }
+    .photo-tile a img {
+        width: 13rem;
+    }
+    .statement {
+        margin-bottom: 12rem;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .portrait {
+        left: 2rem;
+    }
+    .paperscrap {
+        display: none;
+    }
+    .student-name {
+        position: relative;
+      left: 0;
+      rotate: 0deg;
+      top: 1.75rem;
+    }    
+    .photo-tile {
+    left: 2rem;
+    }
+    .photo-tile a img {
+        width: 16rem;
+    }
+    .invisible-button {
+        display: none;
+    }
+    .statement {
+        margin-bottom: 0.5rem;
+    }
+ }
