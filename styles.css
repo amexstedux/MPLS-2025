@@ -14,16 +14,16 @@ main {
 }
 .extra-tall {
   font-size: 400px;
-  color: rgba(255, 0, 0, 0.25)
+  color: rgba(255, 0, 0, 0.25);
 }
-nav{
+nav {
   background-image: url(Images/ScrapPurple.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.nav-link{
-  Font-size: 2rem;
+.nav-link {
+  font-size: 2rem;
   color: white;
 }
 .nav-link:hover {
@@ -69,49 +69,50 @@ h2 {
 .about-wrapper {
   position: relative;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .abt-img {
-  width: 80%;
+  width: 100%;
   display: block;
+  max-width: 1000px;
 }
 
 .about-paragraph {
   position: absolute;
-  top: 50%; /* Adjust this to position vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
+  font-family: "centurygothic";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: black;
   font-size: 1.2rem;
   text-align: center;
-  width: 60%; /* Control paragraph width */
+  width: 60%;
   padding: 20px;
   border-radius: 10px;
-  max-width: 650px;
 }
-
 /* Sticky Navigation Styles */
 .sticky-wrapper {
-    position: relative;
-    z-index: 100;
+  position: relative;
+  z-index: 100;
 }
 
 .sticky {
-    position: relative;
-    z-index: 100;
-    width: 100%;
+  position: relative;
+  z-index: 100;
+  width: 100%;
 }
 
 .is-sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    background-color: purple;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: purple;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
