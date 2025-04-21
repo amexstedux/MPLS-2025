@@ -48,7 +48,6 @@ footer p {
 .dakhota-land p {
     margin: 0;
 }
-
 footer ul {
     list-style-type: none;
     margin: 0;
@@ -81,6 +80,7 @@ div.dakhota-land-container {
     z-index: 5;
     /* background-color: rgba(255, 0, 0, 0.5); */
 }
+
 
 .dakhota-land p {
     font-family: "Permanent Marker";
