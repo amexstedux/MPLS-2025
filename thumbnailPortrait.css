@@ -1,0 +1,117 @@
+.thumbnailPortrait {
+  background-color: #e6e7e8;
+  /* width: 249.74px; */
+  /* width may neeed to be max-content?*/
+  /* height: 270.87px; */
+  /* top: 3320px;
+  left: 992.73px; */
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+}
+
+.studentThumbnailName {
+  position: relative;
+  top: 0.8rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(fonts/PermanentMarker-Regular.ttf) format("regular");
+  font-weight: normal;
+}
+
+.permanent-marker-font {
+  font-family: Permanent Marker;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Thumbnail tape a-i */
+
+.tape-a:after {
+  content: url(./images/tape/tape_a.png);
+  transform: scale(1);
+  rotate: -5deg;
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+}
+
+.tape-b:after {
+  content: url(./images/tape/tape_b.png);
+  transform: scale(1);
+  rotate: -5deg;
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+}
+
+.tape-c:after {
+  content: url(./images/tape/tape_c.png);
+  transform: scale(1);
+  rotate: -5deg;
+  position: absolute;
+  top: -3rem;
+  left: 3rem;
+}
+
+.tape-d:after {
+  content: url(./images/tape/tape_d.png);
+  transform: scale(1);
+  rotate: -5deg;
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+}
+
+.tape-e:after {
+  content: url(./images/tape/tape_e.png);
+  transform: scale(1);
+  position: absolute;
+  top: -4.5rem;
+  left: 1rem;
+}
+
+.tape-f:after {
+  content: url(./images/tape/tape_f.png);
+  transform: scale(1);
+  rotate: -5deg;
+  position: absolute;
+  top: -3rem;
+  left: 2rem;
+}
+
+.tape-g:after {
+  content: url(./images/tape/tape_g.png);
+  transform: scale(1);
+  position: absolute;
+  top: -3rem;
+  left: 3rem;
+}
+
+.tape-h:after {
+  content: url(./images/tape/tape_h.png);
+  transform: scale(1);
+  rotate: -5deg;
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+}
+
+/* Thumbnail tape a-i */
+
+#thumbnails {
+  margin: 12rem;
+}
+
+/* Meduium devices (tablets, less than 1200px */
+@media (max-width: 1199.98) {
+}
+
+@media (max-width: 767.98) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
