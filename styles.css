@@ -58,8 +58,7 @@ nav {
   src: url(fonts/Impact-Label.ttf) format("truetype");
   font-weight: normal;
 }
-
-h2 {
+.about-title {
   font-family: "Impact";
   font-size: 42px;
   text-align: center;
@@ -84,13 +83,14 @@ h2 {
 
 .about-paragraph {
   position: absolute;
-  font-family: "centurygothic";
+  font-family: "poppins";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 1.2rem;
-  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  text-align: left;
   width: 60%;
   padding: 20px;
   border-radius: 10px;
@@ -115,4 +115,43 @@ h2 {
   z-index: 100;
   background-color: purple;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1199.98px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abt-img {
+    width: 60%;
+  }
+
+  .about-paragraph {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abt-img {
+    width: 100%;
+  }
+
+  .about-paragraph {
+    position: absolute;
+    width: 60%;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: left;
+  }
 }
