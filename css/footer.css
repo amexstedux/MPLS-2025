@@ -1,0 +1,150 @@
+footer {
+    width: 100%;
+    background-image: url("../images/footer-bg.png");
+    background-size: initial;
+    height: 15rem;
+    background-position-x: center;
+    background-position-y: -8rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-logo-div,
+.college-logo-div {
+    width: 17rem;
+    text-align: center;
+}
+
+#footer-logo {
+    width: 16rem;
+    position: absolute;
+    left: -2rem;
+    bottom: 0;
+}
+
+#college-logo {
+    width: 8rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.footer-links-div {
+  width: 17rem;
+  position: relative;
+  text-align: center;
+}
+
+footer p {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 8rem;
+    margin-bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+footer a:link,
+footer a:visited {
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+    text-decoration: underline;
+}
+
+div.dakhota-land-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+    bottom: 8rem;
+    z-index: 5;
+}
+
+div.dakhota-land {
+    display: flex;
+  flex-direction: column;
+}
+
+.dakhota-land p {
+    font-family: "Permanent Marker";
+    width: 13rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.dakhota-land img {
+    width: 13rem;
+}
+
+
+
+/* Medium devices (tablets, less than 1200px) */
+@media (max-width: 1199.98px) {
+    div.dakhota-land-container {
+        bottom: -3rem;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    footer {
+        flex-direction: column;
+        /* background-image: none;
+        background-color: #4EC054; */
+        background-position-y: -9rem;
+        height: 18rem;
+    }
+    .footer-logo-div {
+        display: none;
+    }
+    .footer-links-div {
+        width: 100%;
+        top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    footer p {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    footer ul {
+        top: 0;
+        width: 100%;
+        justify-content: space-evenly;
+        width: 15rem;
+        margin: 0 auto;
+    }
+    .college-logo-div {
+        width: 100%;
+        text-align: center;
+    }
+    #college-logo{
+        position: relative;
+        bottom: 3rem;
+        right: 0;
+    }
+    div.dakhota-land-container {
+        position: absolute;
+        bottom: 16rem;
+        justify-content: center;
+    }
+ }
