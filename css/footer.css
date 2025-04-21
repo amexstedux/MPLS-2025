@@ -9,7 +9,7 @@ footer {
     justify-content: space-between;
     z-index: 100;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .footer-logo-div,
@@ -45,6 +45,9 @@ footer p {
     margin-bottom: 0;
 }
 
+.dakhota-land p {
+    margin: 0;
+}
 footer ul {
     list-style-type: none;
     margin: 0;
@@ -69,24 +72,19 @@ footer a:active {
 }
 
 div.dakhota-land-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: fit-content;
+    display: block;
     position: absolute;
-    width: 100%;
-    bottom: 8rem;
+    right: 0;
+    bottom: 15rem;
+    width: 13rem;
     z-index: 5;
+    /* background-color: rgba(255, 0, 0, 0.5); */
 }
 
-div.dakhota-land {
-    display: flex;
-  flex-direction: column;
-}
 
 .dakhota-land p {
     font-family: "Permanent Marker";
-    width: 13rem;
+    /* width: 13rem; */
     font-size: 0.8rem;
     text-align: center;
 }
@@ -99,9 +97,9 @@ div.dakhota-land {
 
 /* Medium devices (tablets, less than 1200px) */
 @media (max-width: 1199.98px) {
-    div.dakhota-land-container {
+    /* div.dakhota-land-container {
         bottom: -3rem;
-    }
+    } */
  }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -144,7 +142,11 @@ div.dakhota-land {
     }
     div.dakhota-land-container {
         position: absolute;
-        bottom: 16rem;
-        justify-content: center;
+        bottom: 17rem;
+        width: 100%;
+    }
+    .dakhota-land {
+        width: 100%;
+        text-align: center;
     }
  }

@@ -2,6 +2,7 @@ body {
   background-image: url(images/purple-green.jpg);
   background-size: contain;
   background-repeat: repeat-y;
+  position: relative;
 }
 main {
   background-image: url(Images/smaller-background.jpg);
@@ -11,6 +12,7 @@ main {
   max-width: 1400px;
   height: 100%;
   margin: 0 auto;
+  margin-bottom: -15rem; /* THE NEGATIVE MARGIN IS NEEDED FOR THE FOOTER */
 }
 .extra-tall {
   font-size: 400px;
