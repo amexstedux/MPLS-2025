@@ -1,18 +1,18 @@
 body {
-  background-image: url(images/purple-green.jpg);
+  background-image: url(../images/purple-green.jpg);
   background-size: contain;
   background-repeat: repeat-y;
   position: relative;
 }
 main {
-  background-image: url(Images/smaller-background.jpg);
+  background-image: url(../images/smaller-background.jpg);
   background-repeat: repeat-y;
   background-position: top;
   background-size: contain;
   max-width: 1400px;
   height: 100%;
-  margin: 0 auto;
-  margin-bottom: -15rem; /* THE NEGATIVE MARGIN IS NEEDED FOR THE FOOTER */
+  margin: -3.5rem auto -15rem auto; /* THE NEGATIVE MARGIN IS NEEDED FOR THE HEADER AND FOOTER */
+  padding-top: 27rem;
 }
 .extra-tall {
   font-size: 400px;
@@ -33,55 +33,41 @@ main {
 
 nav {
   background-color: rgba(197, 197, 197, 0.5);
-  color: #fff;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
   display: flex;
   justify-content: center;
   position: sticky;
   z-index: 1000;
   top: 0;
-  padding-top: 0.5rem;
 }
 
 .main-nav ul {
   display: flex;
   justify-content: center;
   gap: 3rem;
+  padding: 0;
+  margin-bottom: 0.75rem;
 }
 
 .main-nav ul li {
   list-style: none;
-  padding: 4px;
   position: relative;
   transition: 0.5s;
   display: block;
-  margin-top: 16px;
+  margin-top: 0.75rem;
 }
 
 .main-nav ul li a {
   font-family: "poppins";
   color: black;
   text-decoration: none;
-  padding: 5px 10px;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .main-nav ul li a:hover {
-  color: purple;
-}
-/*
-.nav-link {
-  font-size: 2rem;
-  color: white;
-}
-.nav-link:hover {
   text-decoration: underline;
 }
-*/
+
 /* ------------------------- NAV END ------------------------- */
 
 .min-h-300 {
@@ -89,7 +75,7 @@ nav {
 }
 
 #info {
-  background-image: url(Images/HeaderScrap.png);
+  background-image: url(../images/HeaderScrap.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -111,7 +97,7 @@ nav {
 
 @font-face {
   font-family: "Impact";
-  src: url(fonts/Impact-Label.ttf) format("truetype");
+  src: url(../fonts/Impact-Label.ttf) format("truetype");
   font-weight: normal;
 }
 .about-title {
