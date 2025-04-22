@@ -7,6 +7,7 @@
   left: 992.73px; */
   padding: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+  
 }
 
 .studentThumbnailName {
@@ -29,7 +30,7 @@
   font-style: normal;
 }
 
-/* Thumbnail tape a-i */
+/* Thumbnail tape a-h */
 
 .tape-a:after {
   content: url(./images/tape/tape_a.png);
@@ -101,10 +102,15 @@
   left: 1rem;
 }
 
-/* Thumbnail tape a-i */
+/* Thumbnail tape a-h */
 
 #thumbnails {
   margin: 12rem;
+}
+
+/* Get rid of line underneath links */
+a {
+  text-decoration: none;
 }
 
 /* Meduium devices (tablets, less than 1200px */
