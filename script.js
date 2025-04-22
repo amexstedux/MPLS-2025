@@ -1,9 +1,6 @@
 $(document).ready(function() {
-    // Load header.html into #header
-    $('#header').load('includes/header.html', function() {
-        // Initialize sticky navigation after header is loaded
-        initializeStickyNav();
-    });
+    // Initialize sticky navigation
+    initializeStickyNav();
 });
 
 // Sticky Navbar--------------------------------
