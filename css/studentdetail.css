@@ -11,9 +11,9 @@ main {
     background-size: cover;
     max-width: 1400px;
     height: 100%;
-    margin: 0 auto -15rem; /* THE NEGATIVE MARGIN IS NEEDED FOR THE FOOTER */
+    margin: -3.5rem auto -15rem auto; /* THE NEGATIVE MARGIN IS NEEDED FOR THE HEADER AND FOOTER */
 }
-nav {
+/* nav {
     height: 3rem;
     text-align: center;
     background-color: cornflowerblue;
@@ -22,7 +22,48 @@ nav {
     color: white;
     width: 100%;
     z-index: 100;
-}
+} */
+
+nav {
+    background-color: rgba(197, 197, 197, 0.5);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0;
+    margin-bottom: 0.75rem;
+  }
+
+.main-nav ul li {
+    list-style: none;
+    position: relative;
+    transition: 0.5s;
+    display: block;
+    margin-top: 0.75rem;
+  }
+  
+  .main-nav ul li a {
+    font-family: "poppins";
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .main-nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+
+
+
 .invisible-button {
     color: transparent;
     display: inline-block;

@@ -1,3 +1,7 @@
+
+//NOTE TO DEVS: THIS FILE IS NOT NEEDED, THE STICKY NAV CAN BE DONE WITH THE CSS "sticky"
+// POSITIONING PROPERTY. THIS FILE SHOULD BE DELETED IF WE DON'T NEED ANY OTHER JS ON THE HOMEPAGE.
+
 $(document).ready(function() {
     // Initialize sticky navigation
     initializeStickyNav();
