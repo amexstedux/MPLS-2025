@@ -39,25 +39,26 @@
           <div class="col-sm-8 col-xs-10">
             <!------------------------------------------    INFO SECTION    ------------------------------------------>
             <!--paper scrap background-->
-            <div style="width: 100%">
+            <div class="info-container" style="width: 100%">
               <div class="row w-100 justify-content-center">
                 <div
                   id="info"
                   class="d-flex flex-column mx-auto w-100 justify-content-center align-items-center"
-                  style="transform: rotate(-5deg)"
                 >
                   <div
                     class="row justify-content-center align-items-center"
                   ></div>
-                  <div class="d-flex flex-column justify-content-start p-5">
-                    <div class="mx-5">
+                  <div
+                    class="d-flex flex-column justify-content-start p-5 info-text"
+                  >
+                    <div class="mx-4">
                       <p>
                         Please join us for our virtual receptions! Our talented
                         graduates will present and discuss their work for
                         friends, family and fans.
                       </p>
                     </div>
-                    <div class="mx-5">
+                    <div class="mx-4">
                       <strong>
                         <p>
                           6-7 p.m. Tuesday May 6<br />
@@ -65,7 +66,7 @@
                         </p>
                       </strong>
                     </div>
-                    <div class="m-5">
+                    <div class="mx-4">
                       <strong>
                         <p>
                           Join the Zoom: PlaceholderForZoomLink<br />
@@ -82,13 +83,17 @@
             <!------------------------------------------    ABOUT THE SHOW SECTION    ------------------------------------------>
 
             <section class="about" id="about">
-              <div class="container-fluid">
+              <div class="about-container">
                 <div class="about-title"><h2>ABOUT THE SHOW</h2></div>
                 <div class="about-wrapper py-5">
                   <picture>
                     <source
                       srcset="images/about-img-mobile2.png"
                       media="(max-width: 1199.98px)"
+                    />
+                    <source
+                      srcset="images/about-img-mobile.png"
+                      media="(max-width: 767.98px)"
                     />
                     <img
                       class="abt-img mx-auto d-block"
