@@ -104,19 +104,15 @@ nav {
 }
 
 .about-wrapper {
+  background-image: url(../images/about-img.png);
+  background-size: cover;
   position: relative;
   width: 100%;
-  height: auto;
+  height: 27rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.abt-img {
-  width: 100%;
-  display: block;
-  max-width: 1000px;
 }
 
 .about-paragraph {
@@ -156,26 +152,17 @@ nav {
 }
 
 /* -------------------------------------------------------- MEDIA QUERIES -------------------------------------------------------- */
+/* Tablet */
+
 @media (max-width: 1199.98px) {
   .about-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .abt-img {
-    width: 80%;
-    display: block;
+    background-image: url(../images/about-img-mobile2.png);
+    background-size: cover;
+    height: 38rem;
   }
 
   .about-paragraph {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 25%);
-    width: 60%;
-    padding: 1rem;
     font-size: 1rem;
     text-align: left;
     z-index: 2;
@@ -197,17 +184,24 @@ nav {
   }
 }
 
+/* Mobile */
+
 @media (max-width: 767.98px) {
-  .about-paragraph {
-    top: 5%;
-    width: 85%;
-    font-size: 0.9rem;
-    padding: 0.8rem;
-    text-align: left;
-    transform: translate(-50%, 50%);
+  .about-wrapper {
+    background-image: none;
+    background-size: cover;
+    height: 38rem;
   }
 
-  .abt-img {
-    width: 100%;
+  .about-paragraph {
+    position: absolute;
+    font-size: 1rem;
+    text-align: left;
+    z-index: 2;
+    width: 60%;
+  }
+
+  .about-container {
+    margin-top: 10rem;
   }
 }
