@@ -11,7 +11,7 @@ main {
   background-size: contain;
   max-width: 1400px;
   height: 100%;
-  margin: -3.5rem auto -15rem auto; /* THE NEGATIVE MARGIN IS NEEDED FOR THE HEADER AND FOOTER */
+  margin: 0 auto -15rem auto; /* THE NEGATIVE MARGIN IS NEEDED FOR THE HEADER AND FOOTER */
   padding-top: 27rem;
 }
 .extra-tall {
@@ -73,22 +73,21 @@ nav {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 3rem;
+  padding-bottom: 3rem;
   aspect-ratio: 16/9;
   margin-top: 45px;
   transform: rotate(-5deg);
 }
 
-#info > * {
+.info-text {
+  /*background-color: aqua;*/
   position: relative;
   z-index: 2;
   max-width: 80%;
   margin: 0 auto;
-}
-
-.info-text {
   font-family: "poppins";
   font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 @font-face {
@@ -159,6 +158,27 @@ nav {
 /* Tablet */
 
 @media (max-width: 1199.98px) {
+
+  #info {
+    background-image: url(../images/infomobile.png);
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position: cover;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 3rem;
+    aspect-ratio: 16/9;
+    margin-top: 45px;
+    transform: rotate(0deg);
+  }
+
+    .info-text {
+      max-width: 100%;
+      padding: 0 !important;
+      margin: 0 50% !important;
+    }
+
   .about-wrapper {
     background-image: url(../images/about-img-mobile2.png);
     background-size: cover;
@@ -172,31 +192,33 @@ nav {
     z-index: 2;
   }
 
-  #info {
-    background-image: url(../images/infomobile.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    min-height: 600px;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 3rem;
-    aspect-ratio: 16/9;
-    margin-top: 45px;
-    transform: rotate(0deg);
   }
 }
 
 /* Mobile */
 
 @media (max-width: 767.98px) {
+main{
+   margin: 0 !important; 
+   padding-top: 10rem !important; 
+}
+nav{
+  margin-top: -10rem !important;
+}
+  #info {
+    /* background-image: none; */
+    background-size: 120% 120%;
+  }
+  .info-text {
+    max-width: 100%;
+    padding: 0 !important;
+    margin: 0 50% !important;
+  }
   .about-wrapper {
     background-image: none;
     background-size: cover;
     height: 38rem;
   }
-
   .about-paragraph {
     position: absolute;
     font-size: 1rem;
