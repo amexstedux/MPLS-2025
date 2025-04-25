@@ -201,12 +201,17 @@ nav {
     width: 3rem;
     height: 3rem;
     margin: 0.35rem;
-    display: inline-block;
+    display: none;
     position: relative;
     overflow: visible;
     color: transparent;
     transition: 0.3s;
 }
+
+.social-links a.show-social {
+    display: inline-block;
+}
+
 .social-links a:hover {
     top: -2px;
 }
