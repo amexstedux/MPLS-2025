@@ -75,7 +75,7 @@ nav {
   width: 100%;
   padding-bottom: 3rem;
   aspect-ratio: 16/9;
-  margin-top: 45px;
+  margin-top: 0;
   transform: rotate(-5deg);
 }
 
@@ -95,6 +95,11 @@ nav {
   src: url(../fonts/Impact-Label.ttf) format("truetype");
   font-weight: normal;
 }
+
+#about {
+  padding-top: 3rem;
+}
+
 .about-title {
   font-family: "Impact";
   font-size: 42px;
@@ -102,7 +107,7 @@ nav {
   transform: rotate(-3deg);
 }
 
-.about-wrapper {
+/* .about-wrapper {
   background-image: url(../images/about-img.png);
   background-size: cover;
   position: relative;
@@ -112,21 +117,31 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+} */
+
+.about-container {
+  background-image: url(../images/about-img.png);
+  background-size: contain;
+  height: 30rem;
+  background-repeat: no-repeat;
 }
 
 .about-paragraph {
-  position: absolute;
+  /* position: absolute; */
   font-family: "poppins";
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   color: black;
   font-size: 1.05rem;
-  line-height: 1.4;
-  text-align: left;
+  /* line-height: 1.4; */
+  line-height: 1.4rem;
+  /* text-align: left;
   width: 80%;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 10px; */
+  margin-top: 5rem;
+  padding: 0 7rem;
 }
 /* Sticky Navigation Styles */
 .sticky-wrapper {
@@ -155,10 +170,29 @@ nav {
 }
 
 /* -------------------------------------------------------- MEDIA QUERIES -------------------------------------------------------- */
+
+/* Small Desktop, less than 1400px */
+@media (max-width: 1399.98px) {
+  main {
+    padding-top: 22rem;
+  }
+  .about-container {
+    background-image: none;
+    height: auto;
+  }
+  .about-paragraph {
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+
 /* Tablet */
 
 @media (max-width: 1199.98px) {
 
+  main {
+    padding-top: 18rem;
+  }
   #info {
     background-image: url(../images/infomobile.png);
     background-repeat: no-repeat;
@@ -169,7 +203,7 @@ nav {
     width: 100%;
     padding: 3rem;
     aspect-ratio: 16/9;
-    margin-top: 45px;
+    margin-top: 0;
     transform: rotate(0deg);
   }
 
@@ -179,32 +213,43 @@ nav {
       margin: 0 50% !important;
     }
 
-  .about-wrapper {
+    .col-md-6.col-xl-3.top-padding {
+      padding: 0 2rem;
+    }
+  /* .about-wrapper {
     background-image: url(../images/about-img-mobile2.png);
     background-size: cover;
     height: 38rem;
-  }
+  } */
 
   .about-paragraph {
-    position: absolute;
+    /* position: absolute; */
     font-size: 1rem;
     text-align: left;
     z-index: 2;
+    background-color: rgba(240,240,240,0.85);
   }
 
-  }
 }
+
 
 /* Mobile */
 
 @media (max-width: 767.98px) {
 main{
-   margin: 0 !important; 
-   padding-top: 10rem !important; 
+   padding-top: 10rem !important;
+   margin-top: 0;
+   margin-left: 0;
+   margin-right: 0;
+   margin-bottom: -3rem;
 }
-nav{
+.col-md-6.col-xl-3.top-padding {
+  padding: 0 3rem;
+}
+
+/* nav{
   margin-top: -10rem !important;
-}
+} */
   #info {
     /* background-image: none; */
     background-size: 120% 120%;
@@ -214,20 +259,24 @@ nav{
     padding: 0 !important;
     margin: 0 50% !important;
   }
-  .about-wrapper {
+  /* .about-wrapper {
     background-image: none;
     background-size: cover;
     height: 38rem;
-  }
+  } */
+   .about-title h2 {
+      font-size: calc(1.525rem + .9vw);
+    }
   .about-paragraph {
-    position: absolute;
+    /* position: absolute; */
     font-size: 1rem;
     text-align: left;
     z-index: 2;
-    width: 60%;
+    /* width: 60%; */
+    margin: 1rem 4rem;
+    background-color: rgba(240,240,240,0.85);
   }
-
-  .about-container {
-    margin-top: 10rem;
+  .photogrid {
+    margin-bottom: 22rem;
   }
 }

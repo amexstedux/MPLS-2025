@@ -72,10 +72,16 @@ footer a:active {
 }
 
 div.dakhota-land-container {
-    display: flex;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 15rem;
+    width: 11rem;
+    z-index: 5;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15rem;
+    margin-bottom: 15rem; */
 }
 
 
@@ -84,10 +90,12 @@ div.dakhota-land-container {
     /* width: 13rem; */
     font-size: 0.8rem;
     text-align: center;
+    background-color: rgba(240,240,240,0.45);
+    padding: 0.5rem;
 }
 
 .dakhota-land img {
-    width: 13rem;
+    width: 10rem;
 }
 
 
@@ -137,5 +145,18 @@ div.dakhota-land-container {
         bottom: 3rem;
         right: 0;
     }
+
+    /* ADDED BACK IN */
+    div.dakhota-land-container {
+        position: absolute;
+        bottom: 17rem;
+        width: 100%;
+    }
+
+    .dakhota-land {
+        width: 100%;
+        text-align: center;
+    }
+    /* END ADD */
 
  }

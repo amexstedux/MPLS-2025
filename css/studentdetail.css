@@ -285,6 +285,9 @@ nav {
 
 /* Medium devices (tablets, less than 1200px) */
 @media (max-width: 1199.98px) {
+    main {
+        margin-bottom: -13rem;
+    }
     .portrait {
         top: auto;
         left: auto;
