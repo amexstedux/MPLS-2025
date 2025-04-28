@@ -146,7 +146,6 @@ div.dakhota-land-container {
         right: 0;
     }
 
-    /* ADDED BACK IN */
     div.dakhota-land-container {
         position: absolute;
         bottom: 17rem;
@@ -157,6 +156,13 @@ div.dakhota-land-container {
         width: 100%;
         text-align: center;
     }
-    /* END ADD */
 
  }
+
+ @media (min-width: 576px) {
+    div.dakhota-land-container {
+        /* position: absolute;
+        bottom: 17rem; */
+        width: 11rem;
+    }
+  }
