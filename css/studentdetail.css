@@ -370,6 +370,9 @@ nav {
     .next-button {
         display: none;
     }
+    .photo-tile a img {
+        max-width: 13rem;
+    }
     .statement {
         margin-bottom: 0.5rem;
     }
@@ -377,3 +380,14 @@ nav {
         padding-bottom: 35rem;
     }
  }
+
+
+ @media (min-width: 576px) and (max-width: 767px) {
+    .container-sm.entire-content {
+      max-width: 720px;
+    }
+
+    .entire-content .col-sm-2 {
+        width: 1%!important;
+    }
+  }
