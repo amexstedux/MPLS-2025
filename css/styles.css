@@ -169,6 +169,10 @@ nav {
   margin-bottom: 15rem;
 }
 
+.zoomlink {
+  font-size: 1.5em;
+}
+
 /* -------------------------------------------------------- MEDIA QUERIES -------------------------------------------------------- */
 
 /* Small Desktop, less than 1400px */
